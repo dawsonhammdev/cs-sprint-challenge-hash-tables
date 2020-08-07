@@ -3,6 +3,17 @@ def intersection(arrays):
     YOUR CODE HERE
     """
     # Your code here
+    # initialize a dict:
+    d = {}
+
+    # we need to go through the arrays and when a number shows up in both arrays we need to add it to the d and return the d
+    for i in arrays:
+        for j in arrays:
+            if j not in d:
+                d[j] = 1
+            else:
+                d[j]+=1
+    result = []
 
     return result
 
